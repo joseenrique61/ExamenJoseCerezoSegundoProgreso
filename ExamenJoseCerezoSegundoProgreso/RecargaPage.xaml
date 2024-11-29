@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenJoseCerezoSegundoProgreso.RecargaPage"
+             Title="Recarga telefónica">
+    <VerticalStackLayout>
+        <Label 
+            Text="Ingrese el número de teléfono:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Editor
+            Margin="10,10"/>
+        <Label
+            Text="Ingrese el nombre a quien se realiza la recarga:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="10,10"/>
+        <Editor
+            Margin="10,10"/>
+
+        <Label
+            Text="La última recarga realizada fue:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="10,10"/>
+        <HorizontalStackLayout>
+            <Label
+                Text="Nombre: "
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="10,10"/>
+            <Label
+                Text="{Binding Nombre}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="10,10"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                Text="Número: "
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="10,10"/>
+            <Label
+                Text="{Binding Numero}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="10,10"/>
+        </HorizontalStackLayout>
+
+        <Button
+            Text="Recargar"
+            Margin="10,10"/>
+    </VerticalStackLayout>
+</ContentPage>
