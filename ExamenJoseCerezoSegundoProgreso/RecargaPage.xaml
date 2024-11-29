@@ -5,31 +5,38 @@
              Title="Recarga telefónica">
     <VerticalStackLayout>
         <Label 
+            x:Name="jcerezo_label1"
             Text="Ingrese el número de teléfono:"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Editor
+            x:Name="jcerezo_editorTelefono"
             Margin="10,10"/>
         <Label
+            x:Name="jcerezo_label2"
             Text="Ingrese el nombre a quien se realiza la recarga:"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Margin="10,10"/>
         <Editor
+            x:Name="jcerezo_editorNombre"
             Margin="10,10"/>
 
         <Label
+            x:Name="jcerezo_label3"
             Text="La última recarga realizada fue:"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Margin="10,10"/>
         <HorizontalStackLayout>
             <Label
+                x:Name="jcerezo_label4"
                 Text="Nombre: "
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Margin="10,10"/>
             <Label
+                x:Name="jcerezo_labelNombre"
                 Text="{Binding Nombre}"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
@@ -37,11 +44,13 @@
         </HorizontalStackLayout>
         <HorizontalStackLayout>
             <Label
+                x:Name="jcerezo_label5"
                 Text="Número: "
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Margin="10,10"/>
             <Label
+                x:Name="jcerezo_labelNumero"
                 Text="{Binding Numero}"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
@@ -49,6 +58,8 @@
         </HorizontalStackLayout>
 
         <Button
+            x:Name="jcerezo_buttonRecarga"
+            Clicked="jcerezo_buttonRecarga_Clicked"
             Text="Recargar"
             Margin="10,10"/>
     </VerticalStackLayout>
