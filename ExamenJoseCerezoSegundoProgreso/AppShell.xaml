@@ -9,9 +9,11 @@
 
     <TabBar>
         <ShellContent
+            Icon="dotnet_bot.png"
             Title="Recarga"
             ContentTemplate="{DataTemplate local:RecargaPage}"/>
         <ShellContent
+            Icon="dotnet_bot.png"
             Title="Nombres"
             ContentTemplate="{DataTemplate local:NombrePage}"/>
     </TabBar>
