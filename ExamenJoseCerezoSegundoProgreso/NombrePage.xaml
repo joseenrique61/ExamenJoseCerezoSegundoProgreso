@@ -26,12 +26,14 @@
             Grid.Column="1"/>
         <Label 
             x:Name="jcerezo_label3"
+            Style="{StaticResource Key=estilo}"
             Text="Cerezo"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
             Grid.Row="1"/>
         <Label 
             x:Name="jcerezo_label4"
+            Style="{StaticResource Key=estilo}"
             Text="Uzcategui"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
