@@ -23,11 +23,11 @@ public partial class RecargaPage : ContentPage
 		BindingContext = recarga;
 	}
 
-	private void jcerezo_buttonRecarga_Clicked(object sender, EventArgs e)
+	private async void jcerezo_buttonRecarga_Clicked(object sender, EventArgs e)
 	{
 		if (string.IsNullOrEmpty(jcerezo_editorNombre.Text) || string.IsNullOrEmpty(jcerezo_editorTelefono.Text))
 		{
-			//codigo de alerta
+			await DisplayAlert("Error", "Todos los campos deben estar llenos", "Entendido");
 			return;
 		}
 
@@ -43,6 +43,6 @@ public partial class RecargaPage : ContentPage
 
 		BindingContext = recarga;
 
-		//codigo de confirmacion
+		await DisplayAlert("Correcto", "Recarga realizada correctamente.", "Entendido");
 	}
 }
