@@ -11,5 +11,8 @@
         <ShellContent
             Title="Recarga"
             ContentTemplate="{DataTemplate local:RecargaPage}"/>
+        <ShellContent
+            Title="Nombres"
+            ContentTemplate="{DataTemplate local:NombrePage}"/>
     </TabBar>
 </Shell>
